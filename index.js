@@ -6,7 +6,7 @@ const doTask = (iterations, callback) => {
       if (number === 6) {
         callback({
           error: true,
-          message: "Se ha sacado un 6"
+          message: "Obtuviste un 6"
         });
         return;
       }
@@ -19,7 +19,7 @@ const doTask = (iterations, callback) => {
 
   doTask(10, function(err, result) {
     if (err) {
-      console.error("Se ha sacado un ", err.message);
+      console.error("Obtuviste un ", err.message);
       return;
     }
     console.log("Tiradas correctas: ", result.value);
